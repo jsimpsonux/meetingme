@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+ul {
+  list-style-type: none;
+  margin: 8px;
+  padding-bottom: 26px;
+}
+
+li {
+  font-size: 20px;
+  color: lightblue;
+}
+
+li > a {
+  display: inline;
+  float: right;
+  padding: 10px;
+  text-decoration: underline;
+  color: lightblue;
+}
+
+
+nav {
+  display: block;
+  padding: 50px;
+  background-color: darkblue;
+}
+
+.hero-banner > div > h2 {
+  float: right;
+  background-color: lightblue;
+  color: darkblue;
+  padding-right: 20px;
+  margin: 20px;
+
+}
+
+.hero-banner {
+  display: block;
+  padding-top: 100px;
+  padding-bottom: 120px;
+  background-image: url("/Users/jack.s/Documents/bootcamp/Week-2-Challenge/starter/images/02-hero-bg.jpg");
+  background-size: 100%;
+}
+
+.page-wrapper {
+  display: grid;
+  grid-template-columns: 0.25fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 25px;
+  padding: 25px;
+}
+
+#about { grid-area: 1 / 2 / 2 / 3; }
+#work { grid-area: 2 / 2 / 3 / 3; }
+#contact { grid-area: 3 / 2 / 4 / 3; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  
+}
+
+p {
+  margin: 0;
+}
