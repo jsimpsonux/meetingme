@@ -82,7 +82,8 @@ p {
 
 
 
-/* Each item starts on row / column / spans rows / spans columns */
+/* Each item starts on row / column / spans rows / spans columns.
+individual grid items with images that are constrained to the container */
 
 .item1 { 
   grid-area: 1 / 1 / span 3 / span 3;
@@ -93,31 +94,48 @@ p {
  }
 .item2 { 
   grid-area: 2 / 1 / span 2 / span 2;
-  background-image: url(../images/02-portfolio-1.jpg);
+  background-image: url(../images/02-portfolio-2.jpg);
   padding: 50px;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .item3 { 
   grid-area: 2 / 2 / span 2 / span 2;
-  background-image: url(../images/02-portfolio-1.jpg);
+  background-image: url(../images/02-portfolio-3.jpg);
   padding: 50px;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .item4 { 
   grid-area: 3 / 1 / span 2 / span 2; 
-  background-image: url(../images/02-portfolio-1.jpg);
+  background-image: url(../images/02-portfolio-4.jpg);
   padding: 50px;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .item5 { 
   grid-area: 3 / 2 / span 2 / span 2; 
-  background-image: url(../images/02-portfolio-1.jpg);
+  background-image: url(../images/02-run-buddy.jpg);
   padding: 50px;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+#contact > .second-container > div {
+  text-decoration: underline;
+  color: lightblue;
+  padding-right: 20px;
+  margin: 20px;
+  justify-content: center;
+}
+
+#contact > .second-container {
+  background-color: darkblue;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
 }
 
 h1,
