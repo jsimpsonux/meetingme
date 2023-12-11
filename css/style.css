@@ -47,7 +47,7 @@ nav {
 .hero-banner {
   display: block;
   padding-top: 100px;
-  padding-bottom: 120px;
+  padding-bottom: 220px;
   background-image: url("/Users/jack.s/Documents/bootcamp/Week-2-Challenge/starter/images/02-hero-bg.jpg");
   background-size: 100%;
 }
@@ -64,6 +64,61 @@ nav {
 #about { grid-area: 1 / 2 / 2 / 3; }
 #work { grid-area: 2 / 2 / 3 / 3; }
 #contact { grid-area: 3 / 2 / 4 / 3; }
+
+p {
+  float: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 100px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 0.5fr;
+  grid-template-rows: 0.5fr 0.5fr 0.5fr;
+  grid-column-gap: 50px;
+  grid-row-gap: 25px;
+}
+
+
+
+/* Each item starts on row / column / spans rows / spans columns */
+
+.item1 { 
+  grid-area: 1 / 1 / span 3 / span 3;
+  background-image: url(../images/02-portfolio-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 50px;
+ }
+.item2 { 
+  grid-area: 2 / 1 / span 2 / span 2;
+  background-image: url(../images/02-portfolio-1.jpg);
+  padding: 50px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.item3 { 
+  grid-area: 2 / 2 / span 2 / span 2;
+  background-image: url(../images/02-portfolio-1.jpg);
+  padding: 50px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.item4 { 
+  grid-area: 3 / 1 / span 2 / span 2; 
+  background-image: url(../images/02-portfolio-1.jpg);
+  padding: 50px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.item5 { 
+  grid-area: 3 / 2 / span 2 / span 2; 
+  background-image: url(../images/02-portfolio-1.jpg);
+  padding: 50px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 h1,
 h2,
