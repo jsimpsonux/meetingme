@@ -36,6 +36,9 @@ nav {
   background-color: darkblue;
 }
 
+/* I added background colours and changed font colours, as well as
+align h2 tag for the part of the page where the user will first land on */
+
 .hero-banner > div > h2 {
   display: flex;
   justify-content: center;
@@ -50,9 +53,13 @@ nav {
   display: block;
   padding-top: 100px;
   padding-bottom: 120px;
-  background-image: url("images/02-hero-bg.jpg");
+  background-image: url("../images/02-hero-bg.jpg");
   background-size: 100%;
 }
+
+/* The image is selected in .hero-banner and to centre the image
+I adjusted the top and left at 50% to move the image halfway of the total container width and height
+and the translate at -20% adjusted the image to centre as it was off */
 
 .hero-banner > div > img {
   max-width: 15%;
@@ -70,11 +77,13 @@ nav {
 .page-wrapper {
   display: grid;
   grid-template-columns: 0.25fr 1fr;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: 0.5fr, 1fr, 0.5fr;
   grid-column-gap: 0px;
-  grid-row-gap: 25px;
+  grid-row-gap: 55px;
   padding: 25px;
 }
+
+/* Each item row-start / column-start / row-end / column-end. */
 
 #about { grid-area: 1 / 2 / 2 / 3; }
 #work { grid-area: 2 / 2 / 3 / 3; }
@@ -89,7 +98,7 @@ p {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 0.5fr 0.5fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 0.5fr 0.5fr 0.5fr;
   grid-column-gap: 50px;
   grid-row-gap: 25px;
@@ -97,11 +106,11 @@ p {
 
 
 
-/* Each item starts on row / column / spans rows / spans columns.
+/* Each item row-start / column-start / row-end / column-end.
 individual grid items with images that are constrained to the container */
 
 .item1 { 
-  grid-area: 1 / 1 ;
+  grid-area: 1 / 1 / span 1 / span 2 ;
   background-image: url(../images/02-portfolio-1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -151,7 +160,17 @@ individual grid items with images that are constrained to the container */
   border-width: 5px;
 }
 
-/*  */
+/* Added span to select text within each item in the above css and give background */
+
+span {
+  background-color: lightblue;
+  padding: 10px;
+}
+
+
+
+/* centre the content with justify-content 
+using the css selector to specify path the the element I want to edit*/
 
 #contact > .second-container > div {
   text-decoration: underline;
@@ -167,6 +186,29 @@ individual grid items with images that are constrained to the container */
   grid-template-rows: 1fr;
   grid-column-gap: 25px;
   grid-row-gap: 25px;
+}
+
+/* responsive css for mobile users, sizes of the grids and text have been halved
+and padding has been reduced so the content isn't squished */
+
+@media only screen and (max-width: 768px) {
+  .grid-container {
+    width: 50%;
+  }
+  span {
+    font-size: 60%;
+    padding: 5px;
+    display: inline;
+  }
+  nav > ul > li {
+    font-size: 60%;
+  }
+  nav {
+    padding: 15px;
+  }
+  #contact {
+    font-size: 50%;
+  }
 }
 
 
