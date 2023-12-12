@@ -9,6 +9,7 @@ body {
   line-height: 1.5;
 }
 
+
 ul {
   list-style-type: none;
   margin: 8px;
@@ -36,20 +37,34 @@ nav {
 }
 
 .hero-banner > div > h2 {
-  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: lightblue;
   color: darkblue;
-  padding-right: 20px;
-  margin: 20px;
+  margin: 10px;
 
 }
 
 .hero-banner {
   display: block;
   padding-top: 100px;
-  padding-bottom: 220px;
-  background-image: url("/Users/jack.s/Documents/bootcamp/Week-2-Challenge/starter/images/02-hero-bg.jpg");
+  padding-bottom: 120px;
+  background-image: url("images/02-hero-bg.jpg");
   background-size: 100%;
+}
+
+.hero-banner > div > img {
+  max-width: 15%;
+  height: auto;
+  border-style: solid;
+  border-color: lightblue;
+  border-width: 5px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+
 }
 
 .page-wrapper {
@@ -91,6 +106,9 @@ individual grid items with images that are constrained to the container */
   background-size: cover;
   background-repeat: no-repeat;
   padding: 50px;
+  border-style: solid;
+  border-color: lightblue;
+  border-width: 5px;
  }
 .item2 { 
   grid-area: 2 / 1 / span 2 / span 2;
@@ -98,6 +116,9 @@ individual grid items with images that are constrained to the container */
   padding: 50px;
   background-size: cover;
   background-repeat: no-repeat;
+  border-style: solid;
+  border-color: lightblue;
+  border-width: 5px;
 }
 .item3 { 
   grid-area: 2 / 2 / span 2 / span 2;
@@ -105,6 +126,9 @@ individual grid items with images that are constrained to the container */
   padding: 50px;
   background-size: cover;
   background-repeat: no-repeat;
+  border-style: solid;
+  border-color: lightblue;
+  border-width: 5px;
 }
 .item4 { 
   grid-area: 3 / 1 / span 2 / span 2; 
@@ -112,6 +136,9 @@ individual grid items with images that are constrained to the container */
   padding: 50px;
   background-size: cover;
   background-repeat: no-repeat;
+  border-style: solid;
+  border-color: lightblue;
+  border-width: 5px;
 }
 .item5 { 
   grid-area: 3 / 2 / span 2 / span 2; 
@@ -119,24 +146,29 @@ individual grid items with images that are constrained to the container */
   padding: 50px;
   background-size: cover;
   background-repeat: no-repeat;
+  border-style: solid;
+  border-color: lightblue;
+  border-width: 5px;
 }
+
+/*  */
 
 #contact > .second-container > div {
   text-decoration: underline;
-  color: lightblue;
+  color: darkblue;
   padding-right: 20px;
   margin: 20px;
   justify-content: center;
 }
 
 #contact > .second-container {
-  background-color: darkblue;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 25px;
   grid-row-gap: 25px;
 }
+
 
 h1,
 h2,
