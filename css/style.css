@@ -101,7 +101,7 @@ p {
 individual grid items with images that are constrained to the container */
 
 .item1 { 
-  grid-area: 1 / 1 / span 3 / span 3;
+  grid-area: 1 / 1 ;
   background-image: url(../images/02-portfolio-1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -111,7 +111,7 @@ individual grid items with images that are constrained to the container */
   border-width: 5px;
  }
 .item2 { 
-  grid-area: 2 / 1 / span 2 / span 2;
+  grid-area: 2 / 1 ;
   background-image: url(../images/02-portfolio-2.jpg);
   padding: 50px;
   background-size: cover;
@@ -121,7 +121,7 @@ individual grid items with images that are constrained to the container */
   border-width: 5px;
 }
 .item3 { 
-  grid-area: 2 / 2 / span 2 / span 2;
+  grid-area: 2 / 2 ;
   background-image: url(../images/02-portfolio-3.jpg);
   padding: 50px;
   background-size: cover;
@@ -131,7 +131,7 @@ individual grid items with images that are constrained to the container */
   border-width: 5px;
 }
 .item4 { 
-  grid-area: 3 / 1 / span 2 / span 2; 
+  grid-area: 3 / 1 ; 
   background-image: url(../images/02-portfolio-4.jpg);
   padding: 50px;
   background-size: cover;
@@ -141,7 +141,7 @@ individual grid items with images that are constrained to the container */
   border-width: 5px;
 }
 .item5 { 
-  grid-area: 3 / 2 / span 2 / span 2; 
+  grid-area: 3 / 2 ; 
   background-image: url(../images/02-run-buddy.jpg);
   padding: 50px;
   background-size: cover;
